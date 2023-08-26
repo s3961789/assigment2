@@ -1,0 +1,87 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+    <head>
+        <title>
+            My Farm
+        </title>
+
+        <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=WpWdhG6O_fkyQIQDp-mchrFHd7YSrcMxZSDHQfhtFOQhyC8_Tp52c9wGaoJ5bQPiZW82zL4EPFh-VR4JFupTfmcQGZSebaROr9xo6VUGe0lrQC2BjrpmJZ8NG6vZLhOC2_IiNg_mhN9FG-AJfec_AMJRXG0rLuQs3CuaRosO9LtVm7y4zsgDa1XBNjuEWkC3czjrv74mfeLkl6lOwOLAfg" charset="UTF-8"></script>
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        
+            
+    </style>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+
+    
+</head>
+    
+    <body style="background-image: url('img/bg.png'); 
+    background-size: cover; /* Make the background image cover the entire body */
+    background-repeat: no-repeat;
+    background-attachment: fixed;"></body>
+        
+        <div class="row">
+            <!-- This is a comment. It won't appear in your page -->
+            <!-- This long line contains the code for the image roll 
+                over which swaps in an alternative image. You need to select the extra 
+                code and paste it in for each image. Make sure the page still works after pasting. 
+                Replace the template file names with your own filenames for icons, 
+                the rollover version of icons and sounds.d
+            -->
+
+
+            <div class="image-container"><img id="cow1" src="img/cow1.png" onmouseover="this.src='img/cow2.png';" onmouseout="this.src='img/cow1.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="house1" src="img/house1.png" onmouseover="this.src='img/house2.png';" onmouseout="this.src='img/house1.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="milk1" src="img/milk1.png" onmouseover="this.src='img/milk2.png';" onmouseout="this.src='img/milk1.png';" width="200" height="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="tree1" src="img/tree1.png" onmouseover="this.src='img/tree2.png';" onmouseout="this.src='img/tree1.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="jug1" src="img/jug1.png" onmouseover="this.src='img/jug2.png';" onmouseout="this.src='img/jug1.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="chick1" src="img/chick1.png" onmouseover="this.src='img/chick2.png';" onmouseout="this.src='img/chick1.png';" width="200" height="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="food1" src="img/food1.png" onmouseover="this.src='img/food2.png';" onmouseout="this.src='img/food1.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="carrot1" src="img/carrot1.png" onmouseover="this.src='img/carrot2.png';" onmouseout="this.src='img/carrot1.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="farmer1" src="img/farmer1.png" onmouseover="this.src='img/farmer2.png';" onmouseout="this.src='img/farmer1.png';" width="200" height="200"/></div>
+        </div>
+        
+        <script>
+            var sound1 = new buzz.sound("sound/cow.mp3");
+            var sound2 = new buzz.sound("sound/house.mp3");
+            var sound3 = new buzz.sound("sound/milk.mp3");
+            var sound4 = new buzz.sound("sound/tree.mp3");
+            var sound5 = new buzz.sound("sound/jug.mp3");
+            var sound6 = new buzz.sound("sound/chick.mp3");
+            var sound7 = new buzz.sound("sound/carrot.mp3");
+            var sound8 = new buzz.sound("sound/food.mp3");
+            var sound9 = new buzz.sound("sound/farmer.mp3");
+
+            window.onload = function() {
+                document.getElementById('cow1').addEventListener('click', function () {sound1.play();});
+                document.getElementById('house1').addEventListener('click', function () {sound2.play();});
+                document.getElementById('milk1').addEventListener('click', function () {sound3.play();});
+                document.getElementById('tree1').addEventListener('click', function () {sound4.play();});
+                document.getElementById('jug1').addEventListener('click', function () {sound5.play();});
+                document.getElementById('chick1').addEventListener('click', function () {sound6.play();}); 
+                document.getElementById('carrot1').addEventListener('click', function () {sound7.play();});
+                document.getElementById('food1').addEventListener('click', function () {sound8.play();});
+                document.getElementById('farmer1').addEventListener('click', function () {sound9.play();});
+            };
+        </script>
+
+
+
+</html>
+
